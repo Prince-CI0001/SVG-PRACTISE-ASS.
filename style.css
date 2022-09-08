@@ -1,0 +1,78 @@
+#options {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+/* svg{
+    width: 80%;
+} */
+
+#meringue path {
+    transform-origin: 200px 200px;
+}
+
+#meringue path:nth-of-type(1) {
+    transform: rotate(0deg);
+}
+
+#meringue path:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+
+#meringue path:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+
+#meringue path:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+
+#meringue path:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+#meringue path:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
+.animate {
+    transition: all 1s;
+}
+.container{
+    display:flex;
+    /* align-item:center;
+     */
+     /* margin-left: 70px; */
+}
+form {
+    display: block;
+    align-items: center;
+    
+}
+fieldset{
+border: 3px solid #a593c2;
+}
+fieldset > legend{
+color: #a593c2;
+}
+.btn{
+padding: 10px;
+margin: 5px 0px 0px 5px;
+width: 40%;
+background-color: #a593c2;
+columns: grey;
+}
+/* .display{
+border: 2px solid #a593c2;
+} */
+@media only screen  and (max-width: "50%"){
+body{
+    display: block;
+    margin: 1em;
+    background-color: ghostwhite;
+}
+.container{
+    display: flex ;
+    flex-direction: column;
+}
+}

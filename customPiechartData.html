@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDER CHART</title>
+    <link rel="stylesheet" href="customPieChartData.css">
+</head>
+<body>
+    <div class = "container">
+        <div class = "order">
+        <h1>You got a new Order with items on pie</h1>
+        <div class="display" id="crust"></div>
+        <div class="display" id="filling"></div>
+        <div class="display"  id="topping"></div>
+    </div>
+    </div>
+    <script>
+        // <!-- document.getElementById('localStorage').textContent = localStorage.getItem('mylocalData=====key') -->
+        let query = window.location.search;
+        let string = query.slice(1,query.length);
+        const values = string.split("&");
+        const arr = [];
+        // let data = {};
+        // let i = 0;
+        values.map((item)=>{
+            arr.push(item.split("="));
+
+        })
+        // console.log(data);
+        document.getElementById('crust').innerHTML = arr[0][0] + " = " + arr[0][1];
+        document.getElementById('filling').innerHTML = arr[1][0] + " = " + arr[1][1];
+        document.getElementById('topping').innerHTML = arr[2][0] + " = " + arr[2][1];
+         
+    </script>
+</body>
+</html>

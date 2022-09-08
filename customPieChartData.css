@@ -1,0 +1,35 @@
+html,body{
+    height: 100%;
+    background-color: #575061;
+}
+.container{
+    display: flex;
+    height: inherit;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    
+}
+.order{
+    display: block;
+    border: 2px solid #a593c2;
+    background-color: #575061;
+    text-align:center;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.display{
+    padding: 10px;
+    font-size: 20px;
+    color: #a593c2;
+    font-weight:bold;
+    flex:1;
+    justify-content: space-between;
+    border: 3px solid #a593c2;
+    margin: 5px;
+    border-radius: 10px;
+}
+h1{
+    color: #a593c2;
+}

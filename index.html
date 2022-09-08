@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Pie Builder</title>
+</head>
+
+<body>
+    <div class="container">
+    <svg id="display" xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+        <rect x="0" y="0" width="400" height="400" fill="transparent" stroke="black" />
+        <!-- <image x="320" y="320" width="50" height="50" href="https://pieshop.netlify.com/images/bethanylogo.png"> -->
+        <circle class="animate" id="crust-outer" cx="200" cy="200" r="150" fill="transparent" />
+        <circle class="animate" id="crust-inner" cx="200" cy="200" r="110" fill="transparent" />
+        <circle class="animate" id="filling" cx="200" cy="200" r="140" fill="transparent" />
+        <g class="animate" id="meringue" style="display:none;">
+            <circle cx="200" cy="200" r="130" fill="white" stroke="#b3702d" />
+            <path d="M 200 200 q 65 -65 0 -130" stroke="#b3702d" fill="transparent" />
+            <path d="M 200 200 q 65 -65 0 -130" stroke="#b3702d" fill="transparent" />
+            <path d="M 200 200 q 65 -65 0 -130" stroke="#b3702d" fill="transparent" />
+            <path d="M 200 200 q 65 -65 0 -130" stroke="#b3702d" fill="transparent" />
+            <path d="M 200 200 q 65 -65 0 -130" stroke="#b3702d" fill="transparent" />
+            <path d="M 200 200 q 65 -65 0 -130" stroke="#b3702d" fill="transparent" />
+        </g>
+        <text x="200" y="30" text-anchor="middle" font-family="sans-serif" fill="#a593c2" font-size="25">
+            <tspan fill="#4dcfa8" font-weight="bold">Bethany's</tspan>
+            Custom Pie Maker
+        </text>
+    </svg>
+    <div id="options">
+        <form action="customPiechartData.html" method="GET" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Please choose a crust</legend>
+                <input type="radio" name="crust" value="none" checked />None<br>
+                <input type="radio" name="crust" value="pastry" />Pastry<br>
+                <input type="radio" name="crust" value="graham" />Graham Cracker<br>
+                <input type="radio" name="crust" value="chocolate" />Chocolate<br>
+            </fieldset>
+            <fieldset>
+                <legend>Please choose a filling</legend>
+                <input type="radio" name="filling" value="none" checked />None<br>
+                <input type="radio" name="filling" value="keylime" />Key Lime<br>
+                <input type="radio" name="filling" value="pumpkin" />Pumpkin<br>
+                <input type="radio" name="filling" value="lemon" />lemon<br>
+            </fieldset>
+            <fieldset>
+                <legend>Please choose a topping</legend>
+                <input type="radio" name="topping" value="none" checked />None<br>
+                <input type="radio" name="topping" value="meringue" />Meringue<br>
+            </fieldset>
+            <button class="btn" id="animate">Explore</button>
+            <input class="btn" type="submit" value="pieData">
+        </form>
+    </div>
+</div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
